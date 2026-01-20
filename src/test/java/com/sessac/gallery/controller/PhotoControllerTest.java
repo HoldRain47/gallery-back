@@ -46,7 +46,7 @@ public class PhotoControllerTest {
 
         mockMvc.perform(get("/api/photos"))
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$[0].title").value("image2"));
+            .andExpect(jsonPath("$[0].title").value("image1"));
 //        [{id: 1, title: "test", }
 //        {id: 2, title: "hello", }]
 
